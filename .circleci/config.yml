@@ -41,7 +41,6 @@ commands:
       - run:
           name: Build container
           command: |
-            echo $DOCKER_PASS | docker login -u $DOCKER_USERNAME --password-stdin
             docker-compose build
   start_app_and_verify:
     description: Start app and verify
