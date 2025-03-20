@@ -48,7 +48,6 @@ commands:
       - run:
           name: Start app
           command: |
-            echo $DOCKER_PASS | docker login -u $DOCKER_USERNAME --password-stdin
             docker-compose up -d
       - run:
           name: install dockerize
